@@ -1,0 +1,37 @@
+﻿@page
+@model HospiEnCasa.App.Presentacion.Pages.GetMedicoModel
+@{
+}
+<h1>Medico</h1>
+
+<table class="table table-bordered">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Genero</th>
+      <th scope="col">Especialidad</th>
+      <th scope="col">Codigo</th>
+      <th scope="col">RegistroRethus</th>
+    </tr>
+  </thead>
+    
+  <tbody>
+    <tr>
+      
+      <td>@Model.Medico.Id</td>
+      <td>@Model.Medico.Nombre</td>
+          <td>@Model.Medico.Apellidos</td>
+      <td>@Model.Medico.NumeroTelefono</td>
+      <td>@Model.Medico.Genero</td>
+      <td>@Model.Medico.Especialidad</td>
+      <td>@Model.Medico.Codigo</td>
+      <td>@Model.Medico.RegistroRethus</td>
+    </tr>
+   
+    
+  </tbody>
+    
+</table>

@@ -1,0 +1,32 @@
+﻿@page
+@model HospiEnCasa.App.Presentacion.Pages.GetMedicosModel
+@{
+}
+<h1>Lista De Medico</h1>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Details</th>
+    </tr>
+  </thead>
+     @foreach (var medico in Model.ListaMedicos)
+    { 
+  <tbody>
+    <tr>
+      
+      <td>@medico.Id</td>
+      <td>@medico.Nombre</td>
+          <td>@medico.Apellidos</td>
+      <td>@medico.NumeroTelefono</td>
+      <td><a asp-page="./GetMedico" asp-route-id="@medico.Id">Details</a></td>
+    </tr>
+   
+    
+  </tbody>
+    }
+</table>
